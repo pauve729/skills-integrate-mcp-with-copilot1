@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <div id="user-controls">
+        <span id="user-greeting" class="hidden"></span>
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" class="hidden">Logout</button>
+      </div>
     </header>
 
     <main>
@@ -20,6 +26,7 @@
           <p>Loading activities...</p>
         </div>
       </section>
+
 
       <section id="signup-container">
         <h3>Sign Up for an Activity</h3>
@@ -38,6 +45,27 @@
           <button type="submit">Sign Up</button>
         </form>
         <div id="message" class="hidden"></div>
+
+        <div id="login-modal" class="hidden">
+          <form id="login-form">
+            <h4>Login</h4>
+            <div class="form-group">
+              <label for="login-email">Email:</label>
+              <input type="email" id="login-email" required />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" required />
+            </div>
+            <button type="submit">Login</button>
+            <button type="button" id="close-login">Cancel</button>
+          </form>
+        </div>
+
+        <div id="profile-section" class="hidden">
+          <h4>Your Profile</h4>
+          <div id="profile-info"></div>
+        </div>
       </section>
     </main>
 

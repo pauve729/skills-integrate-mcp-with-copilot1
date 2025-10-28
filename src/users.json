@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "email": "admin@mergington.edu",
+      "name": "Admin User",
+      "role": "administrator",
+      "password_hash": "$2b$12$examplehashforadmin"
+    },
+    {
+      "email": "teacher@mergington.edu",
+      "name": "Teacher User",
+      "role": "club_leader",
+      "password_hash": "$2b$12$examplehashforteacher"
+    },
+    {
+      "email": "student@mergington.edu",
+      "name": "Student User",
+      "role": "student",
+      "password_hash": "$2b$12$examplehashforstudent"
+    }
+  ]
+}
